@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "formacao_angular_7projetos": {
+    "calculadora": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/formacao_angular_7projetos",
+            "outputPath": "dist/calculadora",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "formacao_angular_7projetos:build:production"
+              "browserTarget": "calculadora:build:production"
             },
             "development": {
-              "browserTarget": "formacao_angular_7projetos:build:development"
+              "browserTarget": "calculadora:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "formacao_angular_7projetos:build"
+            "browserTarget": "calculadora:build"
           }
         },
         "test": {

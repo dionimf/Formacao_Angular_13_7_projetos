@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'formacao_angular_7projetos'`, () => {
+  it(`should have as title 'calculadora'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('formacao_angular_7projetos');
+    expect(app.title).toEqual('calculadora');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('formacao_angular_7projetos app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('calculadora app is running!');
   });
 });
